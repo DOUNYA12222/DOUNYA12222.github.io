@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Dounya Elarrac</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="accueil">
+    <div id="starField" class="star-field" aria-hidden="true"></div>
+    <nav class="nav">
+      <a href="#accueil" class="logo">DE</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#skills">Competences</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">CV personnel interactif</p>
+        <h1>Dounya Elarrac</h1>
+        <h2>Etudiante en Informatique - Filiere SINF4</h2>
+        <p class="hero-description">
+          Passionnee par le developpement web, la programmation et le developpement de jeux 2D,
+          je construis mon parcours avec l'objectif de creer mes propres projets et
+          de developper une future entreprise dans le domaine informatique.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Voir mes projets</a>
+          <a class="btn secondary" href="#contact">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="profile-panel">
+        <img src="assets/profile.jpeg" alt="Photo de profil de Dounya Elarrac" class="profile-photo">
+        <div>
+          <p class="profile-name">Dounya Elarrac</p>
+          <p class="profile-role">Licence L2 Informatique</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section contact-strip" aria-label="Coordonnees">
+      <a href="mailto:d.elarrac4013@uca.ac.ma">d.elarrac4013@uca.ac.ma</a>
+      <a href="https://github.com/DOUNYA12222" target="_blank" rel="noreferrer">GitHub: DOUNYA12222</a>
+      <a href="https://www.linkedin.com/in/dounia-elarrac-028951409/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </section>
+
+    <section class="section two-columns" id="about">
+      <div>
+        <p class="section-label">A propos</p>
+        <h2>Profil</h2>
+      </div>
+      <div class="text-block">
+        <p>
+          Je m'appelle Dounya Elarrac, etudiante en Licence L2 Informatique a
+          l'Universite Cadi Ayyad, filiere SINF4. Mon parcours est base sur la
+          programmation, le developpement web et la logique de resolution de problemes.
+        </p>
+        <p>
+          Je m'interesse particulierement au developpement logiciel, aux jeux 2D et a
+          la creation d'interfaces modernes. Mon objectif est d'obtenir un bon diplome,
+          de realiser des projets solides et de construire une future entreprise dans
+          le secteur informatique.
+        </p>
+        <p>
+          En plus de l'informatique, j'ai obtenu le premier prix en dessin, une experience
+          qui m'aide a garder une vision creative dans la conception des interfaces et
+          des projets numeriques.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="section-label">Competences</p>
+        <h2>Techniques et personnelles</h2>
+      </div>
+      <div id="skillsRoot"></div>
+    </section>
+
+    <section class="section two-columns" id="formation">
+      <div>
+        <p class="section-label">Formation</p>
+        <h2>Parcours academique</h2>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item active">
+          <button class="accordion-title">2024 - Aujourd'hui | Licence L2 Informatique</button>
+          <div class="accordion-content">
+            <p>Universite Cadi Ayyad - Filiere SINF4. Formation en programmation, web, algorithmique et bases de l'informatique.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">2024 | Baccalaureat Sciences Mathematiques B</button>
+          <div class="accordion-content">
+            <p>Lycee Hassan II. Formation scientifique avec une base solide en mathematiques, logique et raisonnement.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">Prix artistique | Premier prix en dessin</button>
+          <div class="accordion-content">
+            <p>Distinction personnelle qui montre ma creativite, ma concentration et mon sens du detail.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="section-label">Experiences et projets</p>
+        <h2>Realisations</h2>
+      </div>
+      <div id="projectsRoot"></div>
+    </section>
+
+    <section class="section two-columns" id="contact">
+      <div>
+        <p class="section-label">Contact</p>
+        <h2>Envoyer un message</h2>
+        <p class="contact-note">Le formulaire verifie les champs avec jQuery avant validation.</p>
+      </div>
+      <div id="contactRoot"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Dounya Elarrac. CV personnel interactif.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="particles.js"></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" src="script.js"></script>
+</body>
+</html>
