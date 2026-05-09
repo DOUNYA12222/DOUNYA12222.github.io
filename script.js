@@ -14,7 +14,7 @@ const projects = [
     title: "Jeu de cachette 2D",
     description: "Projet de jeu 2D developpe en C++ avec une logique de gameplay simple et interactive.",
     technologies: ["C++", "Game 2D", "Logique"],
-    link: "https://dounya.itch.io/jeu-de-cachette"
+    link: "https://dounya.itch.io/game-2d-cachette"
   },
   {
     title: "SETWEB - Jeu educatif",
