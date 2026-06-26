@@ -7,7 +7,6 @@ Projet individuel du module Programmation Web 2.
 - HTML5 pour la structure semantique
 - CSS3 pour le style, Flexbox/Grid et le responsive design
 - jQuery pour les animations, l'accordeon, le menu mobile et la validation du formulaire
-- ReactJS pour les composants dynamiques avec props
 - GitHub Pages pour le deploiement
 
 ## Sections du CV
@@ -16,16 +15,9 @@ Projet individuel du module Programmation Web 2.
 - A propos
 - Competences avec barres de progression animees
 - Formation sous forme d'accordeon interactif
-- Experiences et projets avec le composant React `ProjectCard`
+- Experiences et projets visibles directement dans la page
 - Contact avec formulaire valide en jQuery
-
-## Composants React
-
-- `SkillCard`
-- `SkillsList`
-- `ProjectCard`
-- `ProjectsList`
-- `ContactForm`
+- Envoi du formulaire contact par API securisee avec SMTP
 
 ## Animation du fond
 
@@ -50,3 +42,22 @@ URL finale :
 ```text
 https://DOUNYA12222.github.io
 ```
+
+## Configuration SMTP pour le formulaire
+
+Pour envoyer les messages du formulaire, il faut publier le site sur Vercel ou
+un hebergement qui supporte les fonctions serverless. Le mot de passe SMTP ne
+doit jamais etre mis dans `script.js` ou `index.html`.
+
+Variables d'environnement a ajouter dans Vercel :
+
+```text
+SMTP_USER=votre-email@gmail.com
+SMTP_PASS=votre-mot-de-passe-application
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=465
+CONTACT_TO=d.elarrac4013@uca.ac.ma
+```
+
+`CONTACT_TO` est optionnel si vous voulez recevoir les messages sur le meme
+email que `SMTP_USER`.
